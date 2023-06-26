@@ -70,9 +70,18 @@ const ProfileCard = () => {
           </p>
           <div className="flex justify-center  p-4">
             <div className="bg-violet-100 w-auto rounded-md mt-4 flex justify-center gap-4 py-4 px-6">
-              <VscAccount size={"1.8rem"} className="cursor-pointer" />
-              <FaLinkedin size={"1.8rem"} className="cursor-pointer" />
-              <FaGithub size={"1.8rem"} className="cursor-pointer" />
+              <a href="https://girish-dev.web.app/" target="_blank">
+                <VscAccount size={"1.8rem"} className="cursor-pointer" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/girishmanchineeru/"
+                target="_blank"
+              >
+                <FaLinkedin size={"1.8rem"} className="cursor-pointer" />
+              </a>
+              <a href="https://github.com/Girish3214/" target="_blank">
+                <FaGithub size={"1.8rem"} className="cursor-pointer" />
+              </a>
             </div>
           </div>
         </div>
