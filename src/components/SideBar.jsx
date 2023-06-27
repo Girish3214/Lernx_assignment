@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import { FcNext } from "react-icons/fc";
+import { FcNext, FcInvite } from "react-icons/fc";
+import { MdOutlineHome, MdPerson2, MdOutlineExplore } from "react-icons/md";
+import { DiGoogleAnalytics } from "react-icons/di";
 
 import Header from "./Header";
 import Gamer from "../assets/profileImages/gamer.png";
@@ -11,22 +13,27 @@ const menu = [
   {
     name: "Home",
     link: "#",
+    icon: <MdOutlineHome size={"2rem"} color="violet" />,
   },
   {
     name: "Job Invites",
     link: "#",
+    icon: <FcInvite size={"2rem"} color="violet" />,
   },
   {
     name: "Analytics",
     link: "#",
+    icon: <DiGoogleAnalytics size={"2rem"} color="violet" />,
   },
   {
     name: "My Profile",
     link: "#",
+    icon: <MdPerson2 size={"2rem"} color="violet" />,
   },
   {
     name: "Explore",
     link: "#",
+    icon: <MdOutlineExplore size={"2rem"} color="violet" />,
   },
 ];
 const communitiesFeed = [
@@ -89,9 +96,10 @@ const SideBar = () => {
             <ul className="flex-col min-w-full flex list-none">
               {menu.map((item) => (
                 <li
-                  className="rounded-lg mb-4 hover:bg-slate-200 text-blue-100"
+                  className="rounded-lg mb-4 hover:bg-slate-200 text-blue-100 flex gap-x-2 items-center"
                   key={item.name}
                 >
+                  {item.icon}
                   <a
                     href={item.link}
                     className="flex items-center gap-4 text-lg font-black text-violet-300 px-2 py-3 rounded-lg leading-4 focus:text-violet-950 lg:leading-7 lg:py-3"
