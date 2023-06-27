@@ -46,9 +46,9 @@ const ProfileCard = () => {
       <div className="p-4">
         {/* profile Image */}
         <div className="flex flex-wrap justify-center">
-          <div className="w-40 h-40 px-4 -mt-24 rounded-full border-8 border-white flex justify-center items-center  max-w-xs">
+          <div className="w-40 h-40 px-4 -mt-24 rounded-full  flex justify-center items-center  max-w-sm">
             <img
-              className="rounded-full shadow-lg max-w-full h-auto align-middle border-none "
+              className="rounded-full  max-w-xs h-auto align-middle  w-40 h-40 border-8 border-white"
               src={ProfilePicture}
             />
           </div>
