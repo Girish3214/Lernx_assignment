@@ -16,8 +16,8 @@ const Header = ({ showSidebar, setShowSidebar }) => {
     setProfile(!profile);
   };
   return (
-    <nav className="border-b-2 border-violet-100">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 ">
+    <nav className="border-b-2 border-violet-100 fixed top-0 left-0 right-0 bg-white">
+      <div className="mx-auto max-w-full px-4 sm:px-6 lg:px-16 ">
         <div className="flex h-20 items-center justify-between">
           <div className="flex items-center"></div>
           <div className="hidden md:block">
