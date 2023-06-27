@@ -20,7 +20,7 @@ const About = () => {
   return (
     <div>
       <div className="p-4 border-b-2 flex gap-8">
-        <p className="text-slate-500">
+        <p className="text-slate-500 text-sm md:text-base">
           Hi! I'm a full stack developer with 3 years of expertise in React,
           MERN stack. I am committed to continuous learning and staying
           up-to-date. I prioritize clean code and to deliver high-quality

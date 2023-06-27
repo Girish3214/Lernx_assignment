@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import About from "./About";
-import Skills from "./Skills";
-import Posts from "./Posts";
+import OtherTabs from "./OtherTabs";
 
 const Tabs = ({ tabs }) => {
   const [activeTab, setActiveTab] = useState(tabs[0]);
@@ -15,11 +14,11 @@ const Tabs = ({ tabs }) => {
       case "About":
         return <About />;
       case "Skills & Certificates":
-        return <Skills />;
+        return <OtherTabs title={tab} />;
       case "Posts":
-        return <Posts />;
+        return <OtherTabs title={tab} />;
       case "Spaces":
-        return <Posts />;
+        return <OtherTabs title={tab} />;
       default:
         break;
     }
@@ -32,7 +31,7 @@ const Tabs = ({ tabs }) => {
             {tabs.map((tab) => (
               <button
                 key={tab}
-                className={`px-4 py-2 rounded-t transition bg-white ${
+                className={`px-4 py-2 rounded-t transition bg-white text-xs md:text-lg ${
                   activeTab === tab
                     ? "border-b-4 border-violet-500 text-violet-800"
                     : "text-gray-700"
